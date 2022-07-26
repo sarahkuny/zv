@@ -9,7 +9,7 @@ function Homepage() {
             <Banner />
             <CategoriesDisplay />
             <Link to="/shop">
-                <button className="font-Arcade text-white text-6xl border-white border-dotted md:border-4 rounded-md w-96 pt-2 pb-4 px-5 mt-8 mb-32 bg-neutral-800 hover:bg-[#2644FD] drop-shadow-[0px_0px_5px_rgba(255,255,255,0.25)]">SHOP ALL...</button>
+                <button className="font-Arcade text-white text-6xl rounded-md w-[350px] pt-2 pb-4 px-5 mt-14 mb-32 bg-neutral-800 hover:bg-[#2644FD] drop-shadow-[0px_0px_5px_rgba(255,255,255,0.25)]">SHOP ALL...</button>
             </Link>
             <Footer />
         </div>

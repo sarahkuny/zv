@@ -14,7 +14,7 @@ function CategoriesDisplay () {
     ];
 
     return ( 
-        <div className="grid grid-cols-2 gap-2 place-items-center text-white font-Reactor7 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mt-10 place-items-center text-white font-Reactor7 w-full md:w-[800px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1500px]">
             {categories.map((category) => <CategoryCard category={category} />)}
                 
         </div>
