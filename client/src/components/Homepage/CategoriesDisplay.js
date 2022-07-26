@@ -14,9 +14,11 @@ function CategoriesDisplay () {
     ];
 
     return ( 
-        <div id="categories" className="flex flex-col bg-neutral-900 text-white font-Reactor7 items-center pt-5 snap-y w-full ">
+        <div className="grid grid-cols-2 gap-2 place-items-center text-white font-Reactor7 ">
             {categories.map((category) => <CategoryCard category={category} />)}
-         </div>
+                
+        </div>
+        
      );
 }
 
