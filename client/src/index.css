@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Ferrum";
+    src: url("./fonts/Ferrum-wy99.otf");
+}
+@font-face {
+    font-family: "Reactor7";
+    src: url("./fonts/Reactor7.ttf");
+}
+@font-face {
+    font-family: "Arcade";
+    src: url("./fonts/Arcade.ttf");
+}
