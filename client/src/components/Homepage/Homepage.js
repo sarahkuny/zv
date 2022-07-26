@@ -1,7 +1,7 @@
 import Banner from "./Banner";
 import CategoriesDisplay from "./CategoriesDisplay";
 import Footer from "../Footer";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Homepage() {
     return (  
