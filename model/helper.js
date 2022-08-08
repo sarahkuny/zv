@@ -1,5 +1,5 @@
 require("dotenv").config();
-const mysql = require("mysql");
+const Pool = require("pg").Pool;
 
 module.exports = async function db(query) {
   const results = {
@@ -12,13 +12,13 @@ module.exports = async function db(query) {
     const DB_PASS = process.env.DB_PASS;
     const DB_NAME = process.env.DB_NAME;
 
-    const con = mysql.createConnection({
+    const con = new Pool({
       host: DB_HOST || "127.0.0.1",
-      user: DB_USER || "root",
-      //port: 52000, //docker
+      user: DB_USER || "postgres",
+      port: 5234, 
       password: DB_PASS,
-      database: DB_NAME || "easyread",
-      multipleStatements: true,
+      database: DB_NAME || "zeitgeist"
+      
     });
 
     con.connect(function (err) {
